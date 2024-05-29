@@ -30,6 +30,7 @@
 
                 <b><p>Creativity is contagious,pass it on</p></b>
             </font>
+            
             <button class="button" border-color="gray"><span><img src="https://ik.imagekit.io/sakthi44/googgle.png?updatedAt=1716454320402" style="width: 15px;height: 15px;padding-left: 55px;"></span><span style="padding-left: 2px;">Sign in with Google</span><br></button>
 
             <div class="divider" >
@@ -38,21 +39,25 @@
                 
                 
                 </font>
-                
+                <form id="form"  >
                 <font align="left">
                     Email
                     <br>
                 </font>
-                <input  placeholder="mail@website.com "class="my-button" ><br><br>
+                <input type="text" id="email" placeholder="mail@website.com "class="my-button" >
+                <span style="color:red" id="email_error"></span><br><br>
 
-                <font align="left" >Password</font><br><input placeholder="Min.8character" class="my-button"> <br><br>
+                <font align="left" >Password</font><br>
+                <input id="password" placeholder="Min.8character" class="my-button">
+                <span style="color:red" id="pass_error"></span> <br><br>
                 <div style="display:flex">
                     <font size="2px"><input type="checkbox">Remember me <span style="padding-left: 255px;"><font color="blue">Forget Password?</font></font></span>
                 </div> 
                 <br>
-                <input type="button" value="Login" style="background-color:black;width: 450;height: 40;border-radius: 10px;color: whitesmoke;">
+                <button type="submit"  style="background-color:black;width: 450;height: 40;border-radius: 10px;color: whitesmoke;" >Login</button>
                 <br>
                 <br>
+                </form>
                 <font size="2px">Not registered yet?<font color="blue"><span style="padding-left: 7px;">Create an Account</span></font>
                 <br>
                 <br>
@@ -84,6 +89,7 @@
         
 
     </section>
-                
+    <script src="script.js" >
+    </script>            
 </body>
 </html>
